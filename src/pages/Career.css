@@ -1,0 +1,25 @@
+#career {
+    padding: 2rem;
+    text-align: center;
+    padding-top:20rem;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    color: #6f42c1;
+    margin-bottom: 1rem;
+  }
+  
+  .job-listing {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .job-listing:hover {
+    background-color: #f8f9fa;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+  }
+  

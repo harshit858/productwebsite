@@ -1,0 +1,32 @@
+#products {
+    padding: 2rem;
+    text-align: center;
+    padding-top:20rem;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    color: #ffc107;
+    margin-bottom: 1rem;
+  }
+  
+  .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+  
+  .product-item {
+    flex: 1 1 calc(33.333% - 1.5rem);
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+  }
+  
+  .product-item:hover {
+    background-color: #f8f9fa;
+    transform: scale(1.02);
+    transition: all 0.3s;
+  }
+  

@@ -1,0 +1,54 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it appears above other content */
+    background-color: #f8f9fa; /* Background color to match Bootstrap's light theme */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for better visibility */
+    height:8rem;
+  }
+  
+  
+  
+
+
+.navbar {
+    background-color: #f8f9fa; /* Light background */
+    border-bottom: 1px solid #ddd; /* Optional border */
+    
+    
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #343a40;
+    text-decoration: none;
+  }
+  
+  .navbar-brand:hover {
+    color: #007bff;
+  }
+  
+  .navbar-nav .nav-link {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #495057;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #007bff;
+  }
+  
+  .navbar-toggler {
+    border-color: rgba(0, 0, 0, 0.1);
+    border:none;
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23333' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+  
