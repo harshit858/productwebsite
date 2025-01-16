@@ -1,0 +1,46 @@
+/* Card.css */
+.product-item {
+    flex: 1 1 calc(33.333% - 1.5rem); /* 3 cards per row */
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+    background-color: #fff;
+    transition: all 0.3s ease;
+  }
+  
+  .product-item:hover {
+    background-color: #f8f9fa;
+    transform: scale(1.02);
+  }
+  
+  .product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    object-fit: cover;
+  }
+  
+  .product-item p {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  /* Style for the middle card in the row */
+  .middle-card {
+    margin-top: 20px; /* Moves the last card down to the middle column */
+  }
+  
+  @media (max-width: 768px) {
+    .product-item {
+      flex: 1 1 calc(50% - 1.5rem); /* 2 products per row on medium screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .product-item {
+      flex: 1 1 calc(100% - 1.5rem); /* 1 product per row on small screens */
+    }
+  }
+  

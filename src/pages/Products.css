@@ -1,32 +1,81 @@
 #products {
-    padding: 2rem;
-    text-align: center;
-    padding-top:20rem;
-  }
+  padding: 2rem;
+  text-align: center;
+  padding-top: 20rem;
+  width:80%;
   
-  h1 {
-    font-size: 2rem;
-    color: #ffc107;
-    margin-bottom: 1rem;
-  }
   
-  .product-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-  }
-  
+}
+
+h1 {
+  font-size: 2rem;
+  color: #ffc107;
+  margin-bottom: 1rem;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+ 
+}
+
+.placeholder-item {
+  flex: 1 1 calc(33.333% - 1.5rem); /* Match the size of other cards */
+  visibility: hidden; /* Makes the placeholder invisible */
+}
+
+
+.product-item {
+  flex: 1 1 calc(33.333% - 1.5rem);
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+
+
+
+.product-item:hover {
+  background-color: #f8f9fa;
+  transform: scale(1.02);
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  object-fit: cover; /* Ensures the image covers the area */
+
+}
+
+.product-item img {
+  max-width: 70%; /* Reduce the maximum width to 80% of its container */
+  height: auto; /* Maintain the aspect ratio */
+  margin: 0 auto; /* Center the image within its container */
+  display: block; /* Ensure block-level centering */
+  border-radius: 4px; /* Optional: Rounded corners */
+}
+
+
+.product-item p {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+@media (max-width: 768px) {
   .product-item {
-    flex: 1 1 calc(33.333% - 1.5rem);
-    padding: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    text-align: center;
+    flex: 1 1 calc(50% - 1.5rem); /* 2 products per row on medium screens */
   }
-  
-  .product-item:hover {
-    background-color: #f8f9fa;
-    transform: scale(1.02);
-    transition: all 0.3s;
+}
+
+@media (max-width: 480px) {
+  .product-item {
+    flex: 1 1 calc(100% - 1.5rem); /* 1 product per row on small screens */
   }
-  
+}
