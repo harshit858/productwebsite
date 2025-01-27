@@ -1,19 +1,171 @@
 #aboutUs {
-    padding: 2rem;
-    text-align: center;
-    padding-top:20rem;
-    
+  padding: 2rem;
+  text-align: center;
+  padding-top: 20rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #28a745;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #495057;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.content {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.description {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #7f8c8d;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.services-list {
+  font-size: 18px;
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.services-list li {
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.mission-vision {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.mission, .vision {
+  flex: 1;
+  background-color: #ecf0f1;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mission h2, .vision h2 {
+  font-size: 24px;
+  color: #2980b9;
+  margin-bottom: 10px;
+}
+
+.mission p, .vision p {
+  font-size: 16px;
+  color: #34495e;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+  #aboutUs {
+    padding-top: 10rem;
   }
-  
+
+  .title {
+    font-size: 28px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .services-list {
+    font-size: 16px;
+  }
+
+  .mission-vision {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .mission, .vision {
+    padding: 15px;
+  }
+
+  .mission h2, .vision h2 {
+    font-size: 20px;
+  }
+
+  .mission p, .vision p {
+    font-size: 14px;
+  }
+}
+
+/* Media Query for very small screens */
+@media (max-width: 480px) {
+  #aboutUs {
+    padding-top: 8rem;
+    padding: 1rem;
+  }
+
   h1 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: #28a745;
+    font-size: 1.8rem;
   }
-  
-  p {
-    font-size: 1.1rem;
-    color: #495057;
-    line-height: 1.5;
+
+  .container {
+    padding: 10px;
   }
-  
+
+  .content {
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .description {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .services-list {
+    font-size: 14px;
+  }
+
+  .mission-vision {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .mission, .vision {
+    padding: 12px;
+  }
+
+  .mission h2, .vision h2 {
+    font-size: 18px;
+  }
+
+  .mission p, .vision p {
+    font-size: 13px;
+  }
+}

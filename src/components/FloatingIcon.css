@@ -1,0 +1,59 @@
+.floating-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366; /* WhatsApp green */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    z-index: 9999; /* Ensure it's on top */
+    visibility: visible; /* Fallback for hidden content */
+    opacity: 1; /* Ensure visibility */
+  }
+  
+  /* Hover Effect */
+  .floating-icon:hover {
+    transform: scale(1.1);
+  }
+  
+  /* WhatsApp Logo */
+  .whatsapp-logo {
+    width: 40px;
+    height: 40px;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .floating-icon {
+      bottom: 15px;
+      right: 15px;
+      width: 50px;
+      height: 50px;
+    }
+  
+    .whatsapp-logo {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .floating-icon {
+      bottom: 10px;
+      right: 10px;
+      width: 45px;
+      height: 45px;
+    }
+  
+    .whatsapp-logo {
+      width: 25px;
+      height: 25px;
+    }
+  }
+  

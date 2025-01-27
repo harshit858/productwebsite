@@ -1,0 +1,136 @@
+/* Modal Overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(33, 31, 31, 0.774); /* Dark semi-transparent overlay */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+    animation: fadeIn 0.3s ease-in-out;
+    position: relative;
+  }
+  
+  /* Modal Title */
+  .modal-title {
+    font-size: 24px;
+    color:white;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  /* Close Button */
+  .close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background:white;
+    border: none;
+    font-size: 20px;
+    color: #999;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .close-btn:hover {
+    color: #333;
+  }
+  
+  /* Form Container */
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Form Group */
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+  
+  /* Labels */
+  .form-group label {
+    font-size: 14px;
+    font-weight: 600;
+    color:whitesmoke;
+    margin-bottom: 5px;
+  }
+  
+  /* Inputs */
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .form-group input:focus {
+    border-color: #25d366;
+  }
+  
+  /* Submit Button */
+  .submit-btn {
+    background-color: #25d366;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #20b25a;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 480px) {
+    .modal-content {
+      padding: 20px;
+    }
+  
+    .modal-title {
+      font-size: 20px;
+    }
+  
+    .submit-btn {
+      font-size: 14px;
+    }
+  }
+
+
+  
