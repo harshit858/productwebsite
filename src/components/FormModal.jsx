@@ -7,10 +7,13 @@ function FormModal({ onClose }) {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const url =
-      "https://script.google.com/macros/s/AKfycbzGN1hcc4s36rqWytWj9LYrnCNrGqsYBmwYYtiobx8RU95L7peQy5TGUnhi4lAf0NR2/exec";
+    // const url =
+    //   "https://script.google.com/macros/s/AKfycbzGN1hcc4s36rqWytWj9LYrnCNrGqsYBmwYYtiobx8RU95L7peQy5TGUnhi4lAf0NR2/exec";
 
-    fetch(url, {
+    const API_URL = process.env.REACT_APP_GOOGLE_SCRIPT_URL;
+
+
+    fetch(API_URL, {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: `Name=${e.target.name.value}&State=${e.target.state.value}&City=${e.target.city.value}&Phone=${e.target.phone.value}&Enquiry=${e.target.enquiry.value}`,

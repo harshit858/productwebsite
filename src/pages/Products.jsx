@@ -64,7 +64,7 @@ import './Products.css';
 import Card from '../components/Card.jsx';
 
 import im1 from "../assets/microphone.png";
-import im2 from "../assets/microphone.png";
+import im2 from "../assets/amplifiers/1st amp. CA20+.jpg";
 import im3 from "../assets/microphone.png";
 import im4 from "../assets/microphone.png";
 import im5 from "../assets/microphone.png";
